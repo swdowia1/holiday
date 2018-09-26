@@ -1,0 +1,85 @@
+2018-04-18 18:20:58.9047 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/login
+Controller : taskApi.Controllers.AccountController
+Action : Login
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"model":{"Email":"test","Password":"test"}}]}
+====================================
+2018-04-18 18:21:26.0356 taskApi.Core.NLogger Method: POST
+URL: http://localhost:41694/api/login
+Controller : taskApi.Controllers.AccountController
+Action : Login
+Action Parameters : {"exception":{"Errors":[{"Source":".Net SqlClient Data Provider","Number":2714,"State":6,"Class":16,"Server":".\\sw","Message":"There is already an object named 'Customer' in the database.","Procedure":"","LineNumber":1}],"ClientConnectionId":"0d205f08-79c7-439b-9361-2c7797b7a535","ClassName":"System.Data.SqlClient.SqlException","Message":"There is already an object named 'Customer' in the database.","Data":{"HelpLink.ProdName":"Microsoft SQL Server","HelpLink.ProdVer":"14.00.1000","HelpLink.EvtSrc":"MSSQLServer","HelpLink.EvtID":"2714","HelpLink.BaseHelpUrl":"http://go.microsoft.com/fwlink","HelpLink.LinkId":"20476"},"InnerException":null,"HelpURL":null,"StackTraceString":"   w System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   w System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)\r\n   w System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)\r\n   w System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)\r\n   w System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout, Boolean asyncWrite)\r\n   w System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)\r\n   w System.Data.SqlClient.SqlCommand.ExecuteNonQuery()\r\n   w System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<NonQuery>b__0(DbCommand t, DbCommandInterceptionContext`1 c)\r\n   w System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)\r\n   w System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)\r\n   w System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()\r\n   w System.Data.Entity.Migrations.DbMigrator.ExecuteSql(MigrationStatement migrationStatement, DbConnection connection, DbTransaction transaction, DbInterceptionContext interceptionContext)\r\n   w System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection, DbTransaction transaction, DbInterceptionContext interceptionContext)\r\n   w System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsWithinTransaction(IEnumerable`1 migrationStatements, DbTransaction transaction, DbInterceptionContext interceptionContext)\r\n   w System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsWithinNewTransaction(IEnumerable`1 migrationStatements, DbConnection connection, DbInterceptionContext interceptionContext)\r\n   w System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection, DbInterceptionContext interceptionContext)\r\n   w System.Data.Entity.Migrations.DbMigrator.ExecuteStatementsInternal(IEnumerable`1 migrationStatements, DbConnection connection)\r\n   w System.Data.Entity.Migrations.DbMigrator.<>c__DisplayClass32.<ExecuteStatements>b__30()\r\n   w System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()\r\n   w System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)\r\n   w System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)\r\n   w System.Data.Entity.Migrations.DbMigrator.ExecuteStatements(IEnumerable`1 migrationStatements, DbTransaction existingTransaction)\r\n   w System.Data.Entity.Migrations.DbMigrator.ExecuteStatements(IEnumerable`1 migrationStatements)\r\n   w System.Data.Entity.Migrations.DbMigrator.ExecuteOperations(String migrationId, VersionedModel targetModel, IEnumerable`1 operations, IEnumerable`1 systemOperations, Boolean downgrading, Boolean auto)\r\n   w System.Data.Entity.Migrations.DbMigrator.ApplyMigration(DbMigration migration, DbMigration lastMigration)\r\n   w System.Data.Entity.Migrations.DbMigrator.Upgrade(IEnumerable`1 pendingMigrations, String targetMigrationId, String lastMigrationId)\r\n   w System.Data.Entity.Migrations.DbMigrator.UpdateInternal(String targetMigration)\r\n   w System.Data.Entity.Migrations.DbMigrator.<>c__DisplayClasse.<Update>b__d()\r\n   w System.Data.Entity.Migrations.DbMigrator.EnsureDatabaseExists(Action mustSucceedToKeepDatabase)\r\n   w System.Data.Entity.Migrations.DbMigrator.Update(String targetMigration)\r\n   w System.Data.Entity.Internal.DatabaseCreator.CreateDatabase(InternalContext internalContext, Func`3 createMigrator, ObjectContext objectContext)\r\n   w System.Data.Entity.Internal.InternalContext.CreateDatabase(ObjectContext objectContext, DatabaseExistenceState existenceState)\r\n   w System.Data.Entity.Database.Create(DatabaseExistenceState existenceState)\r\n   w System.Data.Entity.CreateDatabaseIfNotExists`1.InitializeDatabase(TContext context)\r\n   w System.Data.Entity.Internal.InternalContext.<>c__DisplayClassf`1.<CreateInitializationAction>b__e()\r\n   w System.Data.Entity.Internal.InternalContext.PerformInitializationAction(Action action)\r\n   w System.Data.Entity.Internal.InternalContext.PerformDatabaseInitialization()\r\n   w System.Data.Entity.Internal.LazyInternalContext.<InitializeDatabase>b__4(InternalContext c)\r\n   w System.Data.Entity.Internal.RetryAction`1.PerformAction(TInput input)\r\n   w System.Data.Entity.Internal.LazyInternalContext.InitializeDatabaseAction(Action`1 action)\r\n   w System.Data.Entity.Internal.LazyInternalContext.InitializeDatabase()\r\n   w System.Data.Entity.Internal.InternalContext.Initialize()\r\n   w System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)\r\n   w System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()\r\n   w System.Data.Entity.Internal.Linq.InternalSet`1.get_InternalContext()\r\n   w System.Data.Entity.Infrastructure.DbQuery`1.System.Linq.IQueryable.get_Provider()\r\n   w System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)\r\n   w taskApi.serwisy.UserService.GetUser(String email) w C:\\dysk_d\\projekty\\urlopy\\taskApi\\serwisy\\Implementation\\UserService.cs:wiersz 28\r\n   w taskApi.Controllers.AccountController.Login(LoginViewModel model) w C:\\dysk_d\\projekty\\urlopy\\taskApi\\Controllers\\AccountController.cs:wiersz 154\r\n   w lambda_method(Closure , Object , Object[] )\r\n   w System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass10.<GetExecutor>b__9(Object instance, Object[] methodParameters)\r\n   w System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)\r\n   w System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)\r\n--- Koniec œladu stosu z poprzedniej lokalizacji, w której wyst¹pi³ wyj¹tek ---\r\n   w System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   w System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   w System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__0.MoveNext()\r\n--- Koniec œladu stosu z poprzedniej lokalizacji, w której wyst¹pi³ wyj¹tek ---\r\n   w System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   w System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   w System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()\r\n--- Koniec œladu stosu z poprzedniej lokalizacji, w której wyst¹pi³ wyj¹tek ---\r\n   w System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__5.MoveNext()\r\n--- Koniec œladu stosu z poprzedniej lokalizacji, w której wyst¹pi³ wyj¹tek ---\r\n   w System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   w System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   w System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__0.MoveNext()\r\n--- Koniec œladu stosu z poprzedniej lokalizacji, w której wyst¹pi³ wyj¹tek ---\r\n   w System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   w System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   w System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__2.MoveNext()\r\n--- Koniec œladu stosu z poprzedniej lokalizacji, w której wyst¹pi³ wyj¹tek ---\r\n   w System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   w System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   w System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__0.MoveNext()","RemoteStackTraceString":null,"RemoteStackIndex":0,"ExceptionMethod":"8\nOnError\nSystem.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089\nSystem.Data.SqlClient.SqlConnection\nVoid OnError(System.Data.SqlClient.SqlException, Boolean, System.Action`1[System.Action])","HResult":-2146232060,"Source":".Net SqlClient Data Provider","WatsonBuckets":null}}
+Error: There is already an object named 'Customer' in the database.
+
+====================================
+2018-04-18 18:21:53.2060 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/login
+Controller : taskApi.Controllers.AccountController
+Action : Login
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"model":{"Email":"test","Password":"test"}}]}
+====================================
+2018-04-18 18:23:33.2606 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/login
+Controller : taskApi.Controllers.AccountController
+Action : Login
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"model":{"Email":"test","Password":"test"}}]}
+====================================
+2018-04-18 18:27:31.8600 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/login/
+Controller : taskApi.Controllers.AccountController
+Action : Login
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"model":{"Email":"test","Password":"test"}}]}
+====================================
+2018-04-18 18:30:51.4258 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/login/
+Controller : taskApi.Controllers.AccountController
+Action : Login
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"model":{"Email":"test","Password":"test"}}]}
+====================================
+2018-04-18 18:43:29.7392 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/rejestracja
+Controller : taskApi.Controllers.AccountController
+Action : Register
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"model":{"Email":"test","Password":"test","RoleApp":0}}]}
+====================================
+2018-04-18 18:43:58.5634 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/login/
+Controller : taskApi.Controllers.AccountController
+Action : Login
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"model":{"Email":"test","Password":"test"}}]}
+====================================
+2018-04-18 18:44:02.9242 taskApi.Core.NLogger JSON
+Method: GET
+URL: http://localhost:41694/api/customer/GetCustomers
+Controller : taskApi.Controllers.CustomerController
+Action : GetCustomers
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{}]}
+====================================
+2018-04-18 18:46:13.6019 taskApi.Core.NLogger JSON
+Method: GET
+URL: http://localhost:41694/api/MyHoliday/GetHoliday
+Controller : taskApi.Controllers.MyHolidayController
+Action : GetHoliday
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{}]}
+====================================
+2018-04-18 18:46:21.0488 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/MyHoliday/AddCalendar
+Controller : taskApi.Controllers.MyHolidayController
+Action : AddCalendar
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"add":{"DateFrom":"2018-04-03","DateTo":"2018-04-03"}}]}
+====================================
+2018-04-18 18:46:21.1488 taskApi.Core.NLogger JSON
+Method: GET
+URL: http://localhost:41694/api/MyHoliday/GetHoliday
+Controller : taskApi.Controllers.MyHolidayController
+Action : GetHoliday
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{}]}
+====================================

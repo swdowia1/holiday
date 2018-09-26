@@ -1,0 +1,35 @@
+2018-04-19 09:21:24.9057 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/login/
+Controller : taskApi.Controllers.AccountController
+Action : Login
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"model":{"Email":"test","Password":"test"}}]}
+====================================
+2018-04-19 09:21:28.9204 taskApi.Core.NLogger JSON
+Method: GET
+URL: http://localhost:41694/api/customer/GetCustomers
+Controller : taskApi.Controllers.CustomerController
+Action : GetCustomers
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{}]}
+====================================
+2018-04-19 09:21:34.6756 taskApi.Core.NLogger JSON
+Method: GET
+URL: http://localhost:41694/api/MyHoliday/GetHoliday
+Controller : taskApi.Controllers.MyHolidayController
+Action : GetHoliday
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{}]}
+====================================
+2018-04-19 09:25:44.0053 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/MyHoliday/AddCalendar
+Controller : taskApi.Controllers.MyHolidayController
+Action : AddCalendar
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"add":{"DateFrom":"2018-04-18","DateTo":"2018-07-26"}}]}
+====================================
+2018-04-19 09:25:44.7385 taskApi.Core.NLogger JSON
+Method: GET
+URL: http://localhost:41694/api/MyHoliday/GetHoliday
+Controller : taskApi.Controllers.MyHolidayController
+Action : GetHoliday
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{}]}
+====================================

@@ -1,0 +1,7 @@
+2018-05-11 09:29:54.4660 taskApi.Core.NLogger JSON
+Method: POST
+URL: http://localhost:41694/api/login/
+Controller : taskApi.Controllers.AccountController
+Action : Login
+Action Parameters : {"messageFormat":"JSON","messageArguments":[{"model":{"Email":"test","Password":"test"}}]}
+====================================
